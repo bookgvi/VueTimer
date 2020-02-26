@@ -88,6 +88,8 @@ export default {
         style = alert.color
       } else if (warning.threshold >= this.COUNTER_START) {
         style = warning.color
+      } else {
+        style = info.color
       }
       return style
     }
@@ -150,14 +152,20 @@ export default {
     /* One second aligns with the speed of the countdown timer */
     transition: 1s linear all;
     /* Allows the ring to change color when the color value updates */
-    stroke: rgb(65, 184, 131);
   }
 
   .base-timer__svg {
     /* Flips the svg and makes the animation to move left-to-right*/
     transform: scaleX(1);
   }
-  .base-timer__path-remaining.red {
-    color: red;
+
+  .red {
+    stroke: red
+  }
+  .orange {
+    stroke: orange
+  }
+  .green {
+    stroke: rgb(65, 184, 131)
   }
 </style>
