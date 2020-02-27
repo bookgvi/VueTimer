@@ -1,5 +1,4 @@
 function Observer (target) {
-
   return new Proxy(target, {
     set (target, property, value, receiver) {
       const success = Reflect.set(target, property, value, receiver)
