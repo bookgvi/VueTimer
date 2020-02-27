@@ -1,4 +1,4 @@
-# learning_and_testing
+# Something intersting))
 
 ## Project setup
 ```
