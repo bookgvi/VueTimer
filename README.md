@@ -1,4 +1,4 @@
-# Something intersting))
+# Something
 
 ## Project setup
 ```
