@@ -34,8 +34,8 @@
 <script>
 const FULL_DASH_ARRAY = 283
 const TIME_LIMIT = 30
-const WARNING_THRESHOLD = 10
-const ALERT_THRESHOLD = 5
+const WARNING_THRESHOLD = (TIME_LIMIT / 2).toFixed(0)
+const ALERT_THRESHOLD = (TIME_LIMIT / 5).toFixed(0)
 const COLOR_CODES = {
   info: {
     color: 'green'
